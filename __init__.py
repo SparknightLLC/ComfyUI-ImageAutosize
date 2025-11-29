@@ -13,15 +13,17 @@ class ImageAutosize:
 		        "max_size": ("INT", {
 		            "default": 1280,
 		            "min": 1,
+		            "max": 8192,
 		            "step": 1
 		        }),
 		        "min_size": ("INT", {
 		            "default": 512,
+		            "max": 4096,
 		            "min": 1,
 		            "step": 1
 		        }),
 		        "divisible_by": ("INT", {
-		            "default": 64,
+		            "default": 32,
 		            "min": 1
 		        }),
 		        "interpolation_mode": (["nearest", "lanczos", "bilinear", "bicubic", "box", "hamming"], {

@@ -15,7 +15,7 @@ Simply drag the image above into ComfyUI and use [ComfyUI Manager » Install Mis
 - `image`: The image to modify.
 - `max_size` (int): The node will resize the **larger dimension** of the `image` to this size in pixels, preserving aspect ratio.
 - `min_size` (int): After evaluating `max_size`, the node will check the **smaller dimension** of the `image`. If it's less than `min_size`, the smaller dimension will be upscaled to this value, preserving aspect ratio.
-- `divisible_by` (int): After evaluating both `max_size` and `min_size`, the dimensions of the image will be rounded to values that are multiples of `divisible_by`. This is useful for diffusion models, which often expect sizes that are divisible by 64.
+- `divisible_by` (int): After evaluating both `max_size` and `min_size`, the dimensions of the image will be rounded to values that are multiples of `divisible_by`. This is useful for diffusion models, which often expect sizes that are divisible by 32.
 - `interpolation_mode` (string): Name of the resizing method.
 - `crop_mode` (string): Cropping is often needed to satisfy `divisble_by`, and this input lets you choose the origin of the crop. Set it to `none` to disable cropping altogether.
 
